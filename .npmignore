@@ -1,0 +1,5 @@
+test/
+.appveyor.bat
+.appveyor.yml
+.travis.yml
+NEWS
