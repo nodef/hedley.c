@@ -5,6 +5,8 @@
 For documentation, see [https://nemequ.github.io/hedley/](https://nemequ.github.io/hedley/).
 There is an easy-to-read user guide and full API documentation.
 
+<br>
+
 ## Brief Description
 
 Hedley is C/C++ a header file designed to smooth over some
@@ -34,22 +36,52 @@ will simply be ignored.
 It should be safe to use any of Hedley's features; if the platform
 doesn't support the feature it will be silently ignored.
 
+<br>
+
 ## Installation
 
 Run:
-```bash
+
+```sh
 $ npm i hedley.c
 ```
 
 And then include `hedley.h` as follows:
+
 ```c
+// main.c
 #include "node_modules/hedley.c/hedley.h"
+
+int main() { /* ... */ }
+```
+
+And then compile with `clang` or `gcc` as usual.
+
+```bash
+$ clang main.c  # or, use gcc
+$ gcc   main.c
+```
+
+You may also use a simpler approach:
+
+```c
+// main.c
+#include <hedley.h>
+
+int main() { /* ... */ }
+```
+
+If you add the path `node_modules/hedley.c` to your compiler's include paths.
+
+```bash
+$ clang -I./node_modules/hedley.c main.c  # or, use gcc
+$ gcc   -I./node_modules/hedley.c main.c
 ```
 
 <br>
 <br>
 
 
+[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/nemequ/hedley)
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/hedley.c)
-[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/nemequ/hedley)
