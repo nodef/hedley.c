@@ -1,6 +1,6 @@
 {
   "name": "hedley.c",
-  "version": "15.2021.3",
+  "version": "15.2021.4",
   "description": "A C/C++ header to help move #ifdefs out of your code; Evan Nemerson (2016).",
   "keywords": [
     "c",
